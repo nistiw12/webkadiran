@@ -1,0 +1,333 @@
+/* CSS for navigation */
+nav {
+    background-color: #663300;
+    padding: 10px;
+    border-bottom: 2px solid #4d2600;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  li a:hover {
+    background-color: #4d2600;
+  }
+  
+  /* CSS for main content */
+  main {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  #content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #663300;
+    border-bottom: 2px solid #663300;
+    padding-bottom: 10px;
+  }
+  
+  section p {
+    line-height: 1.6;
+  }
+  
+  /* CSS for landing page */
+  #landing {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 70px 100px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  #landing h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  #landing p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cta-button {
+    background-color: #663300;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #4d2600;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    #landing {
+      padding: 40px 20px;
+    }
+  
+    #landing h2 {
+      font-size: 2em;
+    }
+  
+    #landing p {
+      font-size: 1em;
+    }
+  }
+  
+  /* CSS for "Tentang Kami" */
+  #tentangkami {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-text {
+    flex: 1 1 60%;
+    color: #663300;
+    line-height: 1.6;
+  }
+  
+  .about-text a {
+    color: #663300;
+    text-decoration: none;
+  }
+  
+  .about-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-image {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-address {
+    margin-top: 20px;
+    color: #663300;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .about-image {
+      margin-top: 20px;
+    }
+  }
+  
+  /* CSS for product gallery */
+  #produk {
+    background: url('background2.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 70px;
+    min-height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #produk h2 {
+    color: #663300;
+    border-bottom: 2px solid #663300;
+    padding-bottom: 10px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery div {
+    flex: 1 1 calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .gallery p {
+    margin-top: 10px;
+    color: #663300;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .gallery div {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* CSS for gallery */
+  #gallery .gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #gallery .gallery div {
+    flex: 1 1 calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #gallery .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #gallery .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    #gallery .gallery div {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #gallery .gallery div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* CSS for order form */
+  #order {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 300px;
+    width: 150%;
+    text-align: left;
+  }
+  
+  #order h2 {
+    margin-bottom: 0px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #663300;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #663300;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4d2600;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      max-width: 100%;
+    }
+  }
+  

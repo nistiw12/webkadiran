@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopi Kadiran</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Kopi Kadiran</h1>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#tentangkami">Tentang Kami</a></li>
+        <li><a href="#produk">Produk Kami</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <section id="landing">
+      <h2>Selamat Datang di Kopi Kadiran</h2>
+      <p>SEED OF HOPE, PLANT BY HOPE</p>
+      <a href="#order" class="cta-button">Order Now</a>
+    </section>
+
+    <section id="tentangkami">
+      <h2>Tentang Kami</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>Kopi Kadiran adalah tempat di mana passion terhadap kopi bertemu dengan suasana yang nyaman dan hangat. Berdiri dengan tujuan untuk menghadirkan pengalaman menikmati kopi yang autentik dan menyenangkan, kami menyajikan berbagai jenis kopi pilihan dari biji kopi berkualitas tinggi.</p>
+
+          <p>Di Kopi Kadiran, setiap cangkir kopi diseduh dengan penuh perhatian dan cinta oleh barista berpengalaman kami, menciptakan rasa yang unik dan memuaskan. Selain itu, kami juga menawarkan berbagai kudapan lezat yang sempurna untuk menemani waktu santai Anda.</p>
+
+          <p>Kami percaya bahwa kopi adalah lebih dari sekedar minuman; ini adalah bagian dari gaya hidup. Oleh karena itu, kami menciptakan saung yang ramah dan inspiratif untuk semua orang—baik untuk bersantai, bekerja, atau berkumpul bersama teman-teman.</p>
+
+          <p>Kunjungi kami di Instagram <a href="https://www.instagram.com/kopikadiran" target="_blank">@kopikadiran</a> untuk melihat update terbaru, menu, dan suasana dari saung kami. Kami tunggu kehadiran Anda untuk menikmati secangkir kopi terbaik di Saung Kadiran Buhun Kopi!</p>
+        </div>
+        <div class="about-image">
+          <img src="kopi_tentangkami.jpg" alt="Kopi Kadiran">
+        </div>
+      </div>
+      <div class="about-address">
+        <p><strong>Alamat:</strong><br>
+          Saung Kadiran Buhun Kopi<br>
+          Kaduwulung, Situraja, Sumedang Regency,<br>
+          West Java 45371, Indonesia<br>
+          Kabupaten Sumedang, 45371
+        </p>
+      </div>
+    </section>
+
+    <section id="produk">
+      <h2>Produk Kami</h2>
+      <div class="gallery">
+        <div>
+          <img src="produk1.jpg" alt="Kopi Arabika">
+          <p>KoKelat IDR 12.000 - Nikmati kelezatan coklat dengan cita rasa khas biji kopi asli.</p>
+        </div>
+        <div>
+          <img src="produk2.jpg" alt="Kopi Robusta">
+          <p>Kopi Robusta IDR 50.000 - Cocok untuk anda yang menyukai kopi dengan rasa yang kuat.</p>
+        </div>
+        <div>
+          <img src="produk3.jpg" alt="Kopi Luwak">
+          <p>Kopi Ready Drink IDR 10.000 - Kopi dengan susu siap minum.</p>
+        </div>
+        <div>
+          <img src="produk5.jpg" alt="Kopi Toraja">
+          <p>Bolu Kopi IDR 25.000 - Bolu rasa kopi dengan cita rasa yang khas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div>
+          <img src="coffee1.jpg" alt="Coffee Product 1">
+        </div>
+        <div>
+          <img src="coffee2.jpg" alt="Coffee Product 2">
+        </div>
+        <div>
+          <img src="coffee3.jpg" alt="Coffee Product 3">
+        </div>
+        <div>
+          <img src="coffee4.jpg" alt="Coffee Product 4">
+        </div>
+        <div>
+            <img src="coffee5.jpg" alt="Coffee Product 5">
+        </div>
+        <div>
+            <img src="coffee6.jpg" alt="Coffee Product 6">
+        </div>
+        <div>
+            <img src="coffee7.jpg" alt="Coffee Product 7">
+          </div>
+        <div>
+            <img src="coffee8.jpg" alt="Coffee Product 8">
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Order Form</h2>
+      <div class="form-container">
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="orderCode">Kode Pesanan</label>
+            <select id="orderCode" name="orderCode" required>
+              <option value="KoKelat">KoKelat</option>
+              <option value="Kopi Robusta">Kopi Robusta</option>
+              <option value="Ready Drink">Ready Drink</option>
+              <option value="Bolu Kopi">Bolu Kopi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="paymentMethod">Bayar Melalui</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+              <option value="bank">Bank Transfer</option>
+              <option value="credit-card">Credit Card</option>
+              <option value="ewallet">E-Wallet</option>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="orderForm.js"></script>
+</body>
+</html>
